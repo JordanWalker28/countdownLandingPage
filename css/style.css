@@ -4,6 +4,31 @@ html, body{
   background-size: cover;
 }
 
+@media (max-width: 760px) {
+  #logo img {
+    width: 50%;
+  }
+  #counter .countdown {
+    font-size: 1.3em !important;
+  }
+
+  #intro p {
+    font-size: 1.2em !important;
+  }
+
+  #icons .fab{
+    margin: 10px 0 0 !important;
+    font-size: 2em;
+  }
+
+}
+
+@media (min-width:321px) and (max-width:568px){
+    #logo img {
+      width: 20%;
+    }
+}
+
 #logo img {
   padding-top: 20px;
 }
@@ -58,10 +83,12 @@ html, body{
 }
 
 #signup .form-inline{
+  margin: 0px;
   display: block;
 }
 
 #signup .btn{
+  margin: 0px;
   background-color: rgba(151,186,226,0.5);
   color:white;
 }
