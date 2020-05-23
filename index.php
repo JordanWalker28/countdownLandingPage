@@ -36,86 +36,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     </head>
-  <body>
 
-    <section id="logo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-              <img src="img/my-logo.png" class="img-fluid"/>
+    <body>
+
+      <section id="logo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="img/my-logo.png" class="img-fluid"/>
+            </div>
+          </div>
+        </div
+      </section>
+
+      <section id="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>I'm working hard, i'll be ready in...</p>
+            </div>
           </div>
         </div>
-      </div
-    </section>
+      </section>
 
-    <section id="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>I'm working hard, i'll be ready in...</p>
+      <section id="counter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="countdown"><p id ="countdown"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="counter">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="countdown"></div>
+      <section id="icons">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-inline">
+                <a href="https://www.facebook.com/jordan.walker.79677471/" target="blank"><li class="list-inline-item"><i class="fab facebook fa-facebook fa-3x"></i></li></a>
+                <a href="https://www.instagram.com/jordanw_2801/" target="blank"><li class="list-inline-item"><i class="fab instagram fa-instagram fa-3x"></i></li></a>
+                <a href="https://github.com/JordanWalker28" target="blank"><li class="list-inline-item"><i class="fab github fa-github fa-3x"></i></li></a>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section id="signup">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <form class="form-inline" role="form" method="post" action="#signup">
+                  <input type="email" class="form-control form-control-sm" name ="email" placeholder="email address">
+                  <button type="submit" class="btn btn-signup btn-sm" name="submit" value="send">Sign-Up</button>
+                </form>
 
-    <section id="icons">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="list-inline">
-              <a href="https://www.facebook.com/jordan.walker.79677471/" target="blank"><li class="list-inline-item"><i class="fab facebook fa-facebook fa-3x"></i></li></a>
-              <a href="https://www.instagram.com/jordanw_2801/" target="blank"><li class="list-inline-item"><i class="fab instagram fa-instagram fa-3x"></i></li></a>
-              <a href="https://github.com/JordanWalker28" target="blank"><li class="list-inline-item"><i class="fab github fa-github fa-3x"></i></li></a>
-            </ul>
+                <?php echo $emailError;?>
+                <?php echo $result; ?>
+                
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="signup">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-              <form class="form-inline" role="form" method="post" action="#signup">
-                <input type="email" class="form-control form-control-sm" name ="email" placeholder="email address">
-                <button type="submit" class="btn btn-signup btn-sm" name="submit" value="send">Sign-Up</button>
-              </form>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/countdown.js"></script>
 
-              <?php echo $emailError;?>
-              <?php echo $result; ?>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countdown.js"></script>
-
-    <script>
-    $(function() {
-      $('.countdown').countdown({
-          date: "June 7, 2087 15:03:26"
-        });
-    });
-    </script>
-
-  </body>
+    </body>
 </html>
